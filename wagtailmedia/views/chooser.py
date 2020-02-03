@@ -17,7 +17,7 @@ else:
     from wagtail.admin.forms.search import SearchForm
     pagination_template = "wagtailadmin/shared/ajax_pagination_nav.html"
 
-if WAGTAIL_VERSION < (2, 9):
+if WAGTAIL_VERSION < (2, 8):
     from wagtail.admin.utils import PermissionPolicyChecker
 else:
     from wagtail.admin.auth import PermissionPolicyChecker
