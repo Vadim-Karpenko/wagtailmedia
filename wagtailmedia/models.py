@@ -19,10 +19,7 @@ from wagtail.core.models import CollectionMember
 from wagtail.search import index
 from wagtail.search.queryset import SearchableQuerySetMixin
 
-if WAGTAIL_VERSION < (2, 9):
-    from wagtail.admin.utils import get_object_usage
-else:
-    from wagtail.admin.models import get_object_usage
+from wagtail.admin.models import get_object_usage
 
 
 class MediaQuerySet(SearchableQuerySetMixin, models.QuerySet):
